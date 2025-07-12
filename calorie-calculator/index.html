@@ -4,6 +4,42 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Calorie calculator</title>
+		<link rel="stylesheet" href="styles/style.css" />
 	</head>
-	<body></body>
+	<body>
+		<div class="main-parent-div">
+			<h1>Maintenance calories calculator</h1>
+			<div class="button-container gender-button">
+				<button id="male-button" class="active">Male</button>
+				<button id="female-button">Female</button>
+			</div>
+			<div class="input-container age-inputs">
+				<p>Enter your age</p>
+				<input type="number" id="age-input-element" placeholder="Age" />
+			</div>
+			<div class="input-container weight-inputs">
+				<p>Enter your weight</p>
+				<input type="number" placeholder="weight" id="weight-input-element" />
+			</div>
+			<div class="input-container height-inputs">
+				<p>Enter your height in CM</p>
+				<input type="number" placeholder="height (CM)" id="height-input-element" />
+			</div>
+			<div class="select-container activity-level-selector">
+				<p>Choose your activity level</p>
+				<select id="activity-level-input-element">
+					<option value="sedentary">Sedentary</option>
+					<option value="lightly-active">Lightly active</option>
+					<option value="moderately-active">Moderately active</option>
+					<option value="very-active">Very active</option>
+					<option value="extra-active">Extra active</option>
+				</select>
+			</div>
+			<div class="output-container">
+				<p id="output-maintenance-calories"></p>
+				<p id="output-BMR-calories"></p>
+			</div>
+		</div>
+	</body>
+	<script src="scripts/script.js"></script>
 </html>
