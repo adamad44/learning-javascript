@@ -10,6 +10,15 @@ body {
 		"Helvetica Neue", Arial, sans-serif;
 }
 
+body input {
+	padding: 0.6rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 0.8rem;
+	font-family: inherit;
+}
+
 /* Button Container Styles */
 .button-container {
 	display: flex;
@@ -53,14 +62,19 @@ body {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-
+	font-size: 1rem;
 	margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.input-container p,
+.select-container p {
+	margin-bottom: 0.3rem;
 }
 
 /* Main Container Styles */
 .main-parent-div {
 	height: 40rem;
-	width: 40rem;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -76,4 +90,41 @@ body {
 .button-container.gender-button {
 	height: 2rem;
 	width: auto;
+}
+
+.select-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.output-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3rem;
+	height: 10rem;
+}
+
+@media (max-width: 768px) {
+	.main-parent-div h1 {
+		font-size: 1rem;
+		white-space: nowrap;
+		margin-top: 10vh;
+		margin-bottom: 3rem;
+	}
+	.main-parent-div {
+		width: 100vw;
+		height: 100vh;
+	}
+	.input-container {
+		font-size: 1.1rem;
+	}
+	body {
+		overflow: hidden;
+	}
+	input[type="number"] {
+		font-size: 16px;
+	}
 }

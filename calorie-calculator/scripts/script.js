@@ -5,6 +5,7 @@ const femaleButton = document.querySelector("#female-button");
 const ageInputElement = document.querySelector("#age-input-element");
 const weightElement = document.querySelector("#weight-input-element");
 const heightElement = document.querySelector("#height-input-element");
+let gender;
 const outputMaintenanceElement = document.querySelector(
 	"#output-maintenance-calories"
 );
