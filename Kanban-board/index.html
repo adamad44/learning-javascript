@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<div class="task-widget" id="task-template" style="display: none">
+			<h1 class="task-widget-title"></h1>
+			<h2 class="task-widget-body"></h2>
+		</div>
+		<div class="new-task-div">
+			<input
+				type="text"
+				id="new-task-input-title"
+				placeholder="enter task title"
+			/>
+			<input
+				type="text"
+				id="new-task-input-body"
+				placeholder="enter task description"
+			/>
+			<button id="add-new-task-button">add</button>
+		</div>
+		<div class="parent-div">
+			<div class="board to-do-board">
+				<h1>To Do</h1>
+			</div>
+			<div class="board doing-board">
+				<h1>Doing</h1>
+			</div>
+			<div class="board done-board">
+				<h1>Done</h1>
+			</div>
+			<button id="test">reset</button>
+		</div>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
